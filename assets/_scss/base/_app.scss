@@ -27,5 +27,14 @@ body {
 }
 
 .wrapper {
+	@include outer-container;
+	margin-bottom:50px;
+	margin-top:50px;
+	max-width:68em;
 	min-height:500px;
+	padding:0 4%;
+
+	@include desk {
+		padding:0;
+	}
 }

@@ -10,8 +10,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" />
-    <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
-  	<link href='//fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/screen.css">
   </head>
@@ -19,32 +19,15 @@
     <header>
 	    <div class="navigation" role="banner">
 			  <div class="navigation-wrapper">
-			    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-			    <nav role="navigation">
+			    <a href="javascript:void(0)" class="js-menu-trigger sliding-panel-button">MENU</a>
+			    <nav role="navigation" class="js-menu sliding-panel-content">
 			      <ul id="js-navigation-menu" class="navigation-menu show">
-			        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-			        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-			        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-			        <li class="nav-link more"><a href="javascript:void(0)">More</a>
-			          <ul class="submenu">
-			            <li><a href="javascript:void(0)">Submenu Item</a></li>
-			            <li><a href="javascript:void(0)">Another Item</a></li>
-			            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-			              <ul class="submenu">
-			                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-			                <li><a href="javascript:void(0)">Another Item</a></li>
-			              </ul>
-			            </li>
-			            <li class="more"><a href="javascript:void(0)">Another submenu</a>
-			              <ul class="submenu">
-			                <li><a href="javascript:void(0)">Sub-submenu</a></li>
-			                <li><a href="javascript:void(0)">An Item</a></li>
-			              </ul>
-			            </li>
-			          </ul>
-			        </li>
+			        <li class="nav-link"><a href="javascript:void(0)">Home</a></li>
+			        <li class="nav-link"><a href="javascript:void(0)">Services</a></li>
+			        <li class="nav-link"><a href="javascript:void(0)">Therapists</a></li>
 			      </ul>
 			    </nav>
+			    <div class="js-menu-screen sliding-panel-fade-screen"></div>
 <!-- 			    <div class="navigation-tools">
 			      <div class="search-bar">
 			        <form role="search">
@@ -60,6 +43,18 @@
       <img src="assets/img/hero.jpg" />
     </header>
     <div class="wrapper">
+	    <p class="type">Article Type</p>
+		  <h1>Article Heading</h1>
+		  <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, perferendis! Odit quisquam <code>code block</code> dicta illum ipsa quod natus iure aliquid necessitatibus veritatis, itaque magnam aliquam, dolorum nostrum nemo, explicabo perspiciatis nobis!</h2>
+
+		  <p class="date">30 Mar 2014</p>
+		  <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
+		    <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
+		  </p>
+		  <h3>Subheading lorem</h3>
+		  <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit. Accusamus. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit! Accusamus.</p>
+		  <hr>
+		  <p class="author">Author Name</p>
     </div>
     <footer class="footer-2" role="contentinfo">
 	    <div class="footer-secondary-links">
