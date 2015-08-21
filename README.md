@@ -1,6 +1,4 @@
-electricthread.github.io
+Restoration Counseling Center Website
 ========================
 
-Organization Page
-
-electricthread.com
+http://www.electricthread.com/restoration/
