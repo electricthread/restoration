@@ -1,14 +1,14 @@
 @mixin btn {
-  background: $blue;
-  border:2px solid $blue;
-  border-radius:2px;
+  background: #b1c658;
+  border:2px solid #b1c658;
+  border-radius:38px;
   color: #fff;
   display: block;
   float: left;
-  font-size: em(12);
+  font-size: .85em;
   font-weight: 700;
-  margin: 2% 0;
-  padding: 16px 20px;
+  margin: 1.6% 0 0;
+  padding: 14px 35px;
   text-decoration: none;
   text-transform: uppercase;
   @include transition (all .3s);
@@ -21,7 +21,11 @@
   }
   &:hover {
     background-color:transparent;
-    border:2px solid $blue;
-    color: $blue;
+    border:2px solid #b1c658;
+    color: #b1c658;
   }
+}
+
+a.btn {
+	@include btn;
 }

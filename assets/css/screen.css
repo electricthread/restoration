@@ -115,6 +115,33 @@
   .type-system-geometric p.author {
     font-family: "Questrial", sans-serif; }
 
+a.btn {
+  background: #b1c658;
+  border: 2px solid #b1c658;
+  border-radius: 38px;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: .85em;
+  font-weight: 700;
+  margin: 1.6% 0 0;
+  padding: 14px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  @media screen and (min-width: 768px) {
+    a.btn {
+      font-size: 0.8125em; } }
+  a.btn span {
+    font-size: 1.1em;
+    margin-left: 7px; }
+  a.btn:hover {
+    background-color: transparent;
+    border: 2px solid #b1c658;
+    color: #b1c658; }
+
 /* Application Template
  * -----------------------------------------------------------------------------
  * Styling for the structure of the site. If your element doesn't show up on
@@ -203,6 +230,9 @@
 header img {
   height: auto;
   max-width: 100%; }
+header a.btn {
+  float: right;
+  margin-right: 4%; }
 
 .about header {
   max-height: 240px;
@@ -210,6 +240,15 @@ header img {
   .about header img {
     position: relative;
     top: -275px; }
+
+#logo {
+  background: url(../img/logo.png) no-repeat scroll 0 0;
+  background-size: 148px 31px;
+  display: block;
+  float: left;
+  height: 30px;
+  margin: 6px 25px 9px 20px;
+  width: 30px; }
 
 .sliding-panel-content {
   position: fixed;
@@ -240,18 +279,22 @@ header img {
       transform: none;
       background: none;
       bottom: auto;
+      float: left;
       height: auto;
-      padding: 0 4%;
-      position: absolute;
+      padding: 1.7% 2%;
+      position: static;
       right: 0;
       top: 0;
-      width: auto; } }
+      width: 50%; } }
   .sliding-panel-content ul {
     padding: 0;
     margin: 0; }
-    @media screen and (min-width: 768px) {
-      .sliding-panel-content ul {
-        float: right; } }
+    .sliding-panel-content ul span {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .sliding-panel-content ul span {
+          color: #e6e6e6;
+          display: inline; } }
   .sliding-panel-content li {
     list-style: none; }
     @media screen and (min-width: 768px) {
@@ -261,12 +304,16 @@ header img {
     border-bottom: 1px solid #333;
     color: #fff;
     display: block;
+    font-size: .9em;
     font-weight: bold;
     padding: 1em;
-    text-decoration: none; }
+    text-decoration: none;
+    text-transform: uppercase; }
     @media screen and (min-width: 768px) {
       .sliding-panel-content li a {
-        border-bottom: none; } }
+        border-bottom: none;
+        color: gray;
+        padding: 1em .6em; } }
     .sliding-panel-content li a:focus {
       background-color: #404040; }
       @media screen and (min-width: 768px) {
@@ -278,7 +325,7 @@ header img {
       @media screen and (min-width: 768px) {
         .sliding-panel-content li a:hover {
           background-color: transparent;
-          color: #eee; } }
+          color: #333; } }
   .sliding-panel-content.is-visible {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);

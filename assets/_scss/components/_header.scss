@@ -7,6 +7,11 @@ header {
 		height:auto;
 		max-width:100%;
 	}
+
+	a.btn {
+  	float: right;
+  	margin-right: 4%;
+  }
 }
 
 .about {
@@ -19,6 +24,16 @@ header {
 	    top: -275px;
     }
 	}
+}
+
+#logo {
+	background:url(../img/logo.png) no-repeat scroll 0 0;
+	background-size: 148px 31px;
+	display: block;
+	float: left;
+  height: 30px;
+  margin: 6px 25px 9px 20px;
+  width: 30px;
 }
 
 .sliding-panel-content {  
@@ -45,20 +60,26 @@ header {
   	@include transform(none);
   	background:none;
   	bottom:auto;
+  	float: left;
   	height: auto;
-  	padding: 0 4%;
-  	position:absolute;
+  	padding: 1.7% 2%;
+  	position:static;
   	right: 0;
   	top: 0;
-  	width: auto;
+  	width: 50%;
   }
 
   ul {
     padding: 0;
     margin: 0;
 
-    @include tablet {
-    	float: right;
+    span {
+    	display: none;
+
+    	@include tablet {
+    		color: lighten(#333, 70%);
+    		display: inline;
+    	}
     }
   }
 
@@ -74,12 +95,16 @@ header {
     border-bottom: $sliding-panel-border;
     color: $sliding-panel-color;
     display: block;
+    font-size: .9em;
     font-weight: bold;
     padding: 1em;
     text-decoration: none;
+    text-transform: uppercase;
 
     @include tablet {
     	border-bottom:none;
+    	color: lighten(#333, 30%);
+    	padding:1em .6em;
     }
 
     &:focus {
@@ -96,7 +121,7 @@ header {
 
       @include tablet {
       	background-color:transparent;
-      	color: #eee;
+      	color: #333;
       }
     }
   }
