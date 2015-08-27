@@ -2,35 +2,37 @@
 //  Footer
 //
 
-// Uncomment this for a sticky footer.
-//
-// .wrapper-for-content-outside-of-footer {
-//   min-height: 100%;
-//   height: auto !important;
-//   height: 100%;
-//   margin: 0 auto -4em;
-// }
+// Map
+#map_canvas {
+  height: 300px;
+  width: 100%;
+}
 
-// html, body {
-//  height: 100%;
-// }
+#map_canvas img { 
+  max-width: none; // to prevent UI control bug
+}
 
-// .wrapper-for-content-outside-of-footer:after {
-//   content: "";
-//   display: block;
-// }
+#map_canvas .content {
+  padding: 0 0.5em 1em 0.5em;
+}
 
-// .footer-2, .wrapper-for-content-outside-of-footer:after {
-//   height: 17em;
+#map_canvas .firstHeading {
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0;
+}
 
-//   @include media($large-screen) {
-//     height: 4em;
-//   }
-// }
+#map_canvas #bodyContent p {
+  font-size: 1em;
+  margin: 0;
+}
 
+
+// Footer
 .footer-2 {
   $base-spacing: 1.5em !default;
-  $action-color: $blue !default;
+  $action-color: #1D1C17 !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
   $footer-background: $action-color;

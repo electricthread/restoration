@@ -28,10 +28,9 @@ body {
 
 .wrapper {
 	@include outer-container;
-	margin-bottom:50px;
-	margin-top:50px;
+	margin-bottom:70px;
+	margin-top:70px;
 	max-width:68em;
-	min-height:500px;
 	padding:0 4%;
 
 	@include desk {
@@ -41,7 +40,7 @@ body {
 
 .bullets {
   $base-line-height: 1.5em !default;
-  $action-color: #477DCA !default;
+  $action-color: $blue !default;
   $dark-gray: #333 !default;
   $base-font-color: $dark-gray !default;
   $icon-bullet-size: 3.5em;
@@ -71,15 +70,15 @@ body {
   }
 
   .bullet-icon-1 {
-    background: $action-color;
+    background: $yellow;
   }
 
   .bullet-icon-2 {
-    background: adjust-hue($action-color, -50%);
+    background: $green;
   }
 
   .bullet-icon-3 {
-    background: adjust-hue($action-color, -140%);
+    background: $red;
   }
 
   .bullet-content {
