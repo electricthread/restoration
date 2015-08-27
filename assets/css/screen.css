@@ -233,13 +233,33 @@ header img {
 header a.btn {
   float: right;
   margin-right: 4%; }
+header h1 {
+  color: #fff;
+  padding: 6% 0 5%;
+  text-align: center; }
 
 .about header {
-  max-height: 240px;
-  overflow: hidden; }
+  height: 300px;
+  overflow: hidden;
+  position: relative; }
+  .about header .navigation.top {
+    background-color: #fff;
+    overflow: hidden; }
   .about header img {
-    position: relative;
-    top: -275px; }
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
 
 #logo {
   background: url(../img/logo.png) no-repeat scroll 0 0;
@@ -367,7 +387,7 @@ a.sliding-panel-button {
       display: none; } }
 
 .footer-2 {
-  background: #b2c559;
+  background: #70BDAB;
   padding: 1.5em;
   width: 100%;
   display: inline-block; }

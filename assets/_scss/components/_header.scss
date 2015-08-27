@@ -12,18 +12,43 @@ header {
   	float: right;
   	margin-right: 4%;
   }
+
+  h1 {
+  	color: #fff;
+    padding: 6% 0 5%;
+    text-align: center;
+	}
 }
 
 .about {
 	header {
-		max-height: 240px;
+		height: 300px;
     overflow: hidden;
+    position: relative;
+
+    .navigation.top {
+    	background-color:#fff;
+    	overflow: hidden;
+    }
 
     img {
-    	position: relative;
-	    top: -275px;
+    	left: 0;
+    	position: absolute;
+	    top: 0;
+	    z-index: -1;
     }
 	}
+}
+
+.overlay {
+  background-color: rgba(0,0,0,.4);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 #logo {
