@@ -14,11 +14,32 @@
 /* Base
  * -----------------------------------------------------------------------------*/
 @font-face {
-  font-family: 'et';
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg#et") format("svg");
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-2qviq2");
+  src: url("../fonts/icomoon.eot?#iefix-2qviq2") format("embedded-opentype"), url("../fonts/icomoon.ttf?-2qviq2") format("truetype"), url("../fonts/icomoon.woff?-2qviq2") format("woff"), url("../fonts/icomoon.svg?-2qviq2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-edit:before {
+  content: "\f044"; }
+
+.icon-group:before {
+  content: "\e600"; }
+
+.icon-location2:before {
+  content: "\e601"; }
+
 .type-system-geometric {
   *zoom: 1;
   font-family: "Questrial", sans-serif;
@@ -196,16 +217,24 @@ a.btn {
   .bullets .bullet-icon {
     background: #70BDAB;
     border-radius: 50%;
+    color: #fff;
     float: left;
     height: 3.5em;
     padding: 0.875em;
     width: 3.5em; }
+    .bullets .bullet-icon span {
+      font-size: 27px; }
   .bullets .bullet-icon-1 {
     background: #F4CF39; }
+    .bullets .bullet-icon-1 span {
+      font-size: 29px;
+      margin-left: 2px; }
   .bullets .bullet-icon-2 {
     background: #b2c559; }
   .bullets .bullet-icon-3 {
     background: #DC4F24; }
+    .bullets .bullet-icon-3 span {
+      font-size: 28px; }
   .bullets .bullet-content {
     margin-left: 4.9em;
     margin-bottom: 2em; }
