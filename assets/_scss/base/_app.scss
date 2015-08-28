@@ -63,14 +63,24 @@ body {
   .bullet-icon {
     background: $action-color;
     border-radius: 50%;
+    color: #fff;
     float: left;
     height: $icon-bullet-size;
     padding: $icon-bullet-size / 4;
     width: $icon-bullet-size;
+
+    span {
+    	font-size: 27px;
+    }
   }
 
   .bullet-icon-1 {
     background: $yellow;
+
+    span {
+    	font-size: 29px;
+    	margin-left: 2px;
+    }
   }
 
   .bullet-icon-2 {
@@ -79,6 +89,10 @@ body {
 
   .bullet-icon-3 {
     background: $red;
+
+    span {
+    	font-size: 28px;
+    }
   }
 
   .bullet-content {
