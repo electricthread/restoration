@@ -13,6 +13,24 @@
 
 /* Base
  * -----------------------------------------------------------------------------*/
+.texture {
+  height: 5em;
+  width: 100%; }
+  .texture .texture-normal {
+    background-color: #f6f5f0;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), -webkit-linear-gradient(-450deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+    float: left;
+    height: 5em;
+    width: 50%; }
+  .texture .texture-inverted {
+    background-color: #f6f5f0;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), -webkit-linear-gradient(-450deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+    background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+    float: left;
+    height: 5em;
+    width: 50%; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?-2qviq2");
@@ -61,7 +79,7 @@
     color: #333;
     line-height: 1.5em; }
   .type-system-geometric a {
-    color: #b2c559;
+    color: #70BDAB;
     text-decoration: none; }
   .type-system-geometric .type {
     border-bottom: 1px solid;
@@ -84,7 +102,6 @@
   .type-system-geometric h2 {
     font-family: "Sanchez", serif;
     font-size: 1.2em;
-    font-style: italic;
     font-weight: 400;
     line-height: 1.4em;
     margin-bottom: 1.1em; }
@@ -137,8 +154,8 @@
     font-family: "Questrial", sans-serif; }
 
 a.btn {
-  background: #b1c658;
-  border: 2px solid #b1c658;
+  background: #70BDAB;
+  border: 2px solid #70BDAB;
   border-radius: 38px;
   color: #fff;
   display: block;
@@ -160,8 +177,8 @@ a.btn {
     margin-left: 7px; }
   a.btn:hover {
     background-color: transparent;
-    border: 2px solid #b1c658;
-    color: #b1c658; }
+    border: 2px solid #70BDAB;
+    color: #70BDAB; }
 
 /* Application Template
  * -----------------------------------------------------------------------------
@@ -185,6 +202,11 @@ a.btn {
  * _page_name.scss      => Styles for page specific elements.
  * ---------------------------------------------------------------------------
  */
+body {
+  background-color: #f6f5f0;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/texturetastic_gray.png"), -webkit-linear-gradient(-450deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/texturetastic_gray.png"), linear-gradient(180deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll; }
+
 .wrapper {
   *zoom: 1;
   max-width: 960px;
@@ -255,28 +277,57 @@ a.btn {
 /* Components
  * -----------------------------------------------------------------------------*/
 /* General */
-header img {
-  height: auto;
-  max-width: 100%; }
-header a.btn {
-  float: right;
-  margin-right: 4%; }
-header h1 {
-  color: #fff;
-  padding: 6% 0 5%;
+header {
+  position: relative; }
+  header #hero {
+    background: url(../img/hero-lg.jpg) no-repeat scroll 0 0;
+    background-size: cover;
+    padding: 4% 20%;
+    text-align: center; }
+  header a.btn {
+    float: right;
+    margin-right: 4%; }
+  header h1 {
+    color: #f4f3ed;
+    padding: 6% 0 5%;
+    text-align: center; }
+
+.navigation.top {
+  background-color: #f6f5f0;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/texturetastic_gray.png"), -webkit-linear-gradient(-450deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/texturetastic_gray.png"), linear-gradient(180deg, #f6f5f0, #e1decd), center no-repeat #f6f5f0 scroll;
+  overflow: hidden; }
+
+#hero-overlay {
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0; }
+
+#hero-text {
+  color: #f4f3ed;
+  font-size: 1.2em;
   text-align: center; }
+
+#hero-logo {
+  height: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 314px; }
 
 .about header {
   height: 300px;
   overflow: hidden;
   position: relative; }
-  .about header .navigation.top {
-    background-color: #fff;
-    overflow: hidden; }
   .about header img {
+    height: auto;
     left: 0;
     position: absolute;
     top: 0;
+    width: 100%;
     z-index: -1; }
 
 .overlay {
@@ -291,12 +342,15 @@ header h1 {
 
 #logo {
   background: url(../img/logo.png) no-repeat scroll 0 0;
-  background-size: 148px 31px;
+  background-size: 41px 39px;
   display: block;
   float: left;
-  height: 30px;
-  margin: 6px 25px 9px 20px;
-  width: 30px; }
+  height: 40px;
+  margin: 2px 15px 9px 20px;
+  opacity: .7;
+  width: 40px; }
+  #logo:hover {
+    opacity: 1; }
 
 .sliding-panel-content {
   position: fixed;
@@ -329,11 +383,12 @@ header h1 {
       bottom: auto;
       float: left;
       height: auto;
-      padding: 1.7% 2%;
-      position: static;
+      padding: 1.7% 2% 1.3%;
+      position: relative;
       right: 0;
       top: 0;
-      width: 50%; } }
+      width: 50%;
+      z-index: 1; } }
   .sliding-panel-content ul {
     padding: 0;
     margin: 0; }
@@ -341,7 +396,7 @@ header h1 {
       display: none; }
       @media screen and (min-width: 768px) {
         .sliding-panel-content ul span {
-          color: #e6e6e6;
+          color: #C1C1C1;
           display: inline; } }
   .sliding-panel-content li {
     list-style: none; }

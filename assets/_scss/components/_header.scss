@@ -2,10 +2,15 @@
 //  Header
 //
 
+
 header {
-	img {
-		height:auto;
-		max-width:100%;
+	position:relative;
+	
+	#hero {
+		background: url(../img/hero-lg.jpg) no-repeat scroll 0 0;
+		background-size: cover;
+		padding: 4% 20%;
+    text-align: center;
 	}
 
 	a.btn {
@@ -14,10 +19,38 @@ header {
   }
 
   h1 {
-  	color: #fff;
+  	color: $tan;
     padding: 6% 0 5%;
     text-align: center;
 	}
+}
+
+.navigation.top {
+	@include texture(180deg, $texture-top-background, $texture-bottom-background, 6, 1); 
+  overflow: hidden;
+}
+
+#hero-overlay {
+	background:rgba(0,0,0,.1);
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+}
+
+#hero-text {
+	color:$tan;
+	font-size: 1.2em;
+  text-align: center;
+}
+
+#hero-logo {
+	height: auto;
+	margin-bottom: 30px;
+	text-align:center;
+	width: 314px;
 }
 
 .about {
@@ -26,15 +59,12 @@ header {
     overflow: hidden;
     position: relative;
 
-    .navigation.top {
-    	background-color:#fff;
-    	overflow: hidden;
-    }
-
     img {
+    	height: auto;
     	left: 0;
     	position: absolute;
 	    top: 0;
+	    width: 100%;
 	    z-index: -1;
     }
 	}
@@ -53,12 +83,17 @@ header {
 
 #logo {
 	background:url(../img/logo.png) no-repeat scroll 0 0;
-	background-size: 148px 31px;
+	background-size: 41px 39px;
 	display: block;
 	float: left;
-  height: 30px;
-  margin: 6px 25px 9px 20px;
-  width: 30px;
+  height: 40px;
+  margin: 2px 15px 9px 20px;
+  opacity: .7;
+  width: 40px;
+
+  &:hover {
+  	opacity: 1;
+  }
 }
 
 .sliding-panel-content {  
@@ -87,11 +122,12 @@ header {
   	bottom:auto;
   	float: left;
   	height: auto;
-  	padding: 1.7% 2%;
-  	position:static;
+  	padding: 1.7% 2% 1.3%;
+  	position:relative;
   	right: 0;
   	top: 0;
   	width: 50%;
+  	z-index: 1;
   }
 
   ul {
@@ -102,7 +138,7 @@ header {
     	display: none;
 
     	@include tablet {
-    		color: lighten(#333, 70%);
+    		color: #C1C1C1;
     		display: inline;
     	}
     }

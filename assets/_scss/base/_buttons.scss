@@ -1,6 +1,6 @@
 @mixin btn {
-  background: #b1c658;
-  border:2px solid #b1c658;
+  background: $blue;
+  border:2px solid $blue;
   border-radius:38px;
   color: #fff;
   display: block;
@@ -21,8 +21,8 @@
   }
   &:hover {
     background-color:transparent;
-    border:2px solid #b1c658;
-    color: #b1c658;
+    border:2px solid $blue;
+    color:$blue;
   }
 }
 

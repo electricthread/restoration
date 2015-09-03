@@ -5,7 +5,7 @@ $serif: 'Sanchez', serif;
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
-  $action-color: #b2c559 !default;
+  $action-color: $blue !default;
   $dark-gray: #333 !default;
   $light-gray: #DDD !default;
   $medium-screen: em(640) !default;
@@ -63,7 +63,6 @@ $serif: 'Sanchez', serif;
   h2 {
     font-family: $serif;
     font-size: 1.2em;
-    font-style: italic;
     font-weight: 400;
     line-height: 1.4em;
     margin-bottom: 1.1em;
