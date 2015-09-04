@@ -25,9 +25,14 @@ header {
 	}
 }
 
-.navigation.top {
-	@include texture(180deg, $texture-top-background, $texture-bottom-background, 6, 1); 
-  overflow: hidden;
+.navigation {
+	@include desk {
+		@include texture(180deg, $texture-top-background, $texture-bottom-background, 6, 1);
+		box-shadow: -4px -4px 11px #000;
+	  overflow: hidden;
+	  position: relative;
+	  z-index: 10;
+	}
 }
 
 #hero-overlay {
@@ -47,8 +52,10 @@ header {
 }
 
 #hero-logo {
-	height: auto;
-	margin-bottom: 30px;
+	background:url(../img/logo-lg.png) no-repeat scroll 0 0;
+	background-size: cover;
+	height: 205px;
+	margin: 0 auto 30px;
 	text-align:center;
 	width: 314px;
 }
@@ -157,7 +164,7 @@ header {
     color: $sliding-panel-color;
     display: block;
     font-size: .9em;
-    font-weight: bold;
+    // font-weight: bold;
     padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
