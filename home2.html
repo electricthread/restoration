@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Restoration</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" />
+    <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/screen.css">
+  </head>
+  <body class="type-system-slab home2">
+    <header>
+	    <div class="navigation" role="banner">
+			  <div class="navigation-wrapper">
+			    <a href="javascript:void(0)" class="js-menu-trigger sliding-panel-button">MENU</a>
+			    <nav role="navigation" class="js-menu sliding-panel-content">
+			    	<a id="logo" href="index.html"></a>
+			      <ul id="js-navigation-menu" class="navigation-menu show">
+			        <li class="nav-link"><a href="index.html">Home</a></li><span>/</span>
+			        <li class="nav-link"><a href="javascript:void(0)">Services</a></li><span>/</span>
+			        <li class="nav-link"><a href="javascript:void(0)">Therapists</a></li><span>/</span>
+			        <li class="nav-link"><a href="about.html">About</a></li>
+			      </ul>
+			    </nav>
+			    <div class="js-menu-screen sliding-panel-fade-screen"></div>
+			  </div>
+			  <a href="#" class="btn">Get in Touch</a>
+			</div>
+			<div id="hero">
+				<span id="hero-overlay"></span>
+				<div id="hero-logo"></div>
+	      <p id="hero-text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.Vestibulum ante ipsum primis in faucibus.</p>
+      </div>
+    </header>
+    <div class="wrapper">
+	    <ul class="bullets">
+			  <li class="bullet">
+			    <div class="bullet-icon bullet-icon-1">
+			      <span class="icon-edit"></span>
+			    </div>
+			    <div class="bullet-content">
+			      <h2>Services</h2>
+			      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+			      </div>
+			  </li>  
+			  <li class="bullet">
+			    <div class="bullet-icon bullet-icon-2">
+			      <span class="icon-group"></span>
+			    </div>
+			    <div class="bullet-content">
+			      <h2>Therapists</h2>
+			      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+			    </div>
+			  </li>
+			  <li class="bullet">
+			    <div class="bullet-icon bullet-icon-3">
+			      <span class="icon-location2"></span>
+			    </div>
+			    <div class="bullet-content">
+			      <h2>About Us</h2>
+			      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+			    </div>
+			  </li> 
+			</ul>
+    </div>
+    <div id="map_canvas"></div>
+    <footer class="footer-2" role="contentinfo">
+	    <div class="footer-secondary-links">
+	      <ul>
+	        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+	        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+	      </ul>
+
+	      <ul class="footer-social">
+	        <li><a href="javascript:void(0)">
+	          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+	          </a></li>
+	        <li><a href="javascript:void(0)">
+	          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+	        </a></li>
+	        <li><a href="javascript:void(0)">
+	          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+	        </a></li>
+	      </ul>
+	    </div>
+    </footer>
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/script.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		  var bittersMap = (function () {
+		    var myLatlng = new google.maps.LatLng(36.012847, -86.804150),
+		        mapCenter = new google.maps.LatLng(36.046422, -86.781505),
+		        mapCanvas = document.getElementById('map_canvas'),
+		        mapOptions = {
+		          center: mapCenter,
+		          zoom: 11,
+		          scrollwheel: false,
+		          draggable: true,
+		          disableDefaultUI: true,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        },
+		        map = new google.maps.Map(mapCanvas, mapOptions),
+		        contentString =
+		          '<div id="content">'+
+		          '<div id="siteNotice">'+
+		          '</div>'+
+		          '<h1 id="firstHeading" class="firstHeading">Restoration Counseling Center</h1>'+
+		          '<div id="bodyContent"'+
+		          '<p>326 Street Address</p>'+
+		          '</div>'+
+		          '</div>',
+		        infowindow = new google.maps.InfoWindow({
+		          content: contentString,
+		          maxWidth: 300
+		        }),
+		        
+		        marker = new google.maps.Marker({
+		          position: myLatlng,
+		          map: map,
+		          title: 'Restoration Counseling Center',
+		          icon: new google.maps.MarkerImage('assets/img/logo2.png',
+    null, null, null, new google.maps.Size(60,60)),
+		        });
+
+		    return {
+		      init: function () {
+		        map.set('styles', [{
+		          featureType: 'landscape',
+		          elementType: 'geometry',
+		          stylers: [
+		            { hue: '#ffff00' },
+		            { saturation: 30 },
+		            { lightness: 10}
+		          ]}
+		        ]);
+
+		        google.maps.event.addListener(marker, 'click', function () {
+		          infowindow.open(map,marker);
+		        });
+		      }
+		    };
+		  }());
+
+		  bittersMap.init();
+		</script>
+  </body>
+</html>

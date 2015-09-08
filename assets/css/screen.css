@@ -434,6 +434,12 @@ header {
     width: 100%;
     z-index: -1; }
 
+.home2 #hero-logo {
+  background-image: url(../img/logo-lg-wht.png); }
+
+.home3 #hero-logo {
+  background-image: url(../img/logo-lg-wht2.png); }
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
