@@ -49,8 +49,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-edit:before {
-  content: "\f044"; }
+.icon-joomla:before {
+  content: "\f1aa"; }
 
 .icon-group:before {
   content: "\e600"; }
